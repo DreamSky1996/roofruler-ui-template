@@ -1,5 +1,5 @@
 ##  🌎 Site
-- [RooRuler.com](https://dev.roofruler.com/) 
+- [RooRuler.com](https://roofruler.com/) 
 
 
 ##  🔧 Setting up Development
