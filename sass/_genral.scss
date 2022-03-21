@@ -1,0 +1,166 @@
+// ----------------------------------------
+//     Genral Styling
+// ----------------------------------------
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: $color-text-light;
+    font-family: $font;
+    position: relative;
+}
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    transition: scroll-behavior 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $color-text-light;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    color: $color-text-light;
+    transition: all .3s linear;
+}
+
+
+
+input {
+    border: none;
+    outline: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"] {
+    padding: 0 1.2rem;
+}
+
+button,
+input,
+a,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $color-heading-dark;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+#wrapper {
+    padding: 0 11rem;
+    position: relative;
+    z-index: 5;
+    max-width: 1440px;
+    @include margin-center;
+
+    @media only screen and (max-width: $bp-1200) {
+        padding: 0 4rem;
+    }
+
+}
+
+.rectangles {
+    position: absolute;
+    width: 8rem;
+    left: 50%;
+    top: 19rem;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.dot {
+    position: absolute;
+    width: 26rem;
+
+    @media only screen and (max-width: $bp-1200) {
+        max-width: 26rem;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    &-1 {
+        right: 5rem;
+        top: 23rem;
+    }
+
+    &-2 {
+        left: 55%;
+        top: 51.5rem;
+    }
+}
+
+
+.bg-light {
+    background: #F6F7F8;
+}
+
+.lg-hover {
+    transition: all .3s;
+
+    &:hover {
+        background: $color-blue !important;
+        color: $color-white !important;
+    }
+}
+
+.dk-hover {
+    transition: all .3s;
+
+    &:hover {
+        background: #0D3883 !important;
+        color: $color-white !important;
+    }
+}
+
+.link {
+    transition: all .3s;
+
+    &:hover {
+        color: #0D3883;
+    }
+}

@@ -1,0 +1,97 @@
+// ----------------------------------------
+//     Section Features
+// ----------------------------------------
+
+.allf-heading {
+    margin-top: 6rem;
+    width: 37rem;
+
+    h1 {
+        font-weight: bold;
+        font-size: 4.8rem;
+        color: $color-heading-light;
+        letter-spacing: -.83px;
+    }
+}
+
+// ----------------------------------------
+//     Genral Grid of minl maxl etc
+// ----------------------------------------
+.minl-maxr,
+.maxl-minr {
+    display: grid;
+    grid-template-columns: minmax(30rem, 58rem) auto;
+    grid-gap: 11.5rem;
+    grid-auto-flow: row;
+    align-items: center;
+}
+
+.minl-maxr {
+    grid-template-columns: auto minmax(30rem, 58rem);
+}
+
+// ----------------------------------------
+//     Accuracy Section
+// ----------------------------------------
+
+.accuracy {
+    margin-top: 13.7rem;
+    margin-bottom: 13.5rem;
+    position: relative;
+
+
+    &__left {
+        position: relative;
+        z-index: 1;
+
+        &>h2 {
+            font-size: 1.6rem;
+            font-weight: medium;
+            color: $color-blue;
+        }
+
+        &>h1 {
+            font-size: 3.2rem;
+            font-weight: 600;
+            margin-bottom: 2.5rem;
+        }
+
+
+        &>p {
+            line-height: 3.2rem;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__right {
+        position: relative;
+        z-index: 1;
+
+        &>img {
+            position: relative;
+            z-index: 1;
+        }
+
+        &--back {
+            position: absolute;
+            top: 50%;
+            left: -12%;
+            transform: translateY(-50%);
+            z-index: 0;
+            max-width: 25rem;
+
+            img {
+                @include img-contain;
+            }
+        }
+    }
+
+    &__back {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        transform: translate(-22%, 30%);
+    }
+
+}

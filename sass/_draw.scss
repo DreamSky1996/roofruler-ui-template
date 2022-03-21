@@ -1,0 +1,419 @@
+// _______________________________________
+//         DRAW PAGE
+// _______________________________________
+
+.draw {
+    padding-top: 10rem;
+
+    .draw__box {
+        max-width: 57rem;
+        @include margin-center;
+
+
+        &--search {
+            background-color: $color-white;
+            color: $color-heading-dark;
+            display: grid;
+            grid-template-columns: min-content 1fr;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 100%;
+            height: 4.6rem;
+            padding: 0 1.6rem;
+            align-items: center;
+
+            label {
+                color: $color-black;
+                font-size: 1.8rem;
+            }
+
+            input {
+                font-size: 1.2rem;
+                font-weight: 300;
+                color: $color-heading-dark;
+                padding: 0 1rem;
+                height: 100%;
+
+                &::placeholder {
+                    color: $color-heading-dark;
+                    font-weight: 200;
+                    font-family: $font;
+                }
+            }
+
+        }
+
+
+        &--map {
+            width: 100%;
+            height: 356px;
+            border-radius: 10px;
+            background: $color-white;
+            border: 1px solid #707070;
+            margin-top: 2.2rem;
+            overflow: hidden;
+        }
+
+        &--btn {
+            text-align: center;
+            @include flex-row-center;
+            margin-top: 2.2rem;
+
+            button {
+                width: 148px;
+                height: 47px;
+                font-size: 1.4rem;
+                @include flex-row-center;
+                border-radius: 10px;
+                margin: 0 .65rem;
+
+            }
+        }
+
+        &--cancel {
+            background: #eaeaea;
+            color: $color-heading-dark;
+            transition: all .3s;
+
+            &:hover {
+                background: rgba(202, 146, 255, 0.294);
+            }
+        }
+
+        &--continue {
+            background: #009CDA;
+            color: $color-white;
+            transition: all .3s;
+
+            &:hover {
+                background: blueviolet;
+            }
+        }
+
+    }
+
+}
+
+
+// _______________________________________
+//         DRAW ZOOM PAGE
+// _______________________________________
+
+.dzoom {
+    display: grid;
+    grid-template-columns: 1fr 26rem;
+
+    &__right {
+        background: $color-white;
+        padding: 4.5rem 3.5rem;
+    }
+
+    &__left {
+        padding: 3rem 2rem 3rem 3rem;
+
+        &--title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 7.7rem;
+
+
+            &--name {
+                display: flex;
+                align-items: center;
+
+
+                &>div {
+                    margin-left: 3.2rem;
+
+                    p {
+                        color: #063446;
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                    }
+
+                    h1 {
+                        color: #063446;
+                        font-weight: 500;
+                        font-size: 1.4rem;
+                        font-weight: 2rem;
+
+                    }
+                }
+
+            }
+
+            .dback {
+                width: 3.3rem;
+                height: 3.3rem;
+                background: $color-white;
+                border-radius: 50%;
+                font-size: 2.8rem;
+                color: $color-heading-dark;
+                @include flex-row-center;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.03);
+            }
+        }
+
+        .dedit {
+            margin-left: 5.5rem;
+            font-size: 1.4rem;
+            color: $color-blue;
+        }
+
+        &--download {
+
+            button {
+                padding: 1.5rem 2.5rem;
+                padding-right: 3rem;
+                border-radius: 8px;
+                background: $color-blue;
+                color: $color-white;
+                font-size: 1.4rem;
+                transition: all .3s;
+
+                &:not(:last-child) {
+                    margin-right: 1rem;
+                }
+
+            }
+
+            img {
+                width: 1.6rem;
+                height: 1.6rem;
+                object-fit: contain;
+                margin-right: .5rem;
+            }
+        }
+    }
+
+    &__map {
+        position: relative;
+        padding: 0 12rem;
+
+
+        &--text {
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+            border-radius: 10px;
+            background: $color-white;
+            display: inline-block;
+            position: absolute;
+            top: -10%;
+            left: .2%;
+            overflow: hidden;
+            padding-right: 2rem;
+
+            &>div {
+                display: grid;
+                grid-template-columns: 7rem 8rem;
+                align-items: center;
+
+                &:last-child button {
+                    border-bottom: 0;
+                }
+
+                button,
+                p {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                button {
+                    padding: .3rem 1rem;
+                    color: $color-white;
+                    text-align: left;
+                    font-size: 1.4rem;
+                    transition: all .3s;
+                    background: $color-blue;
+
+                    &:hover {
+                        background: #aaa;
+                        cursor: pointer;
+                    }
+                }
+
+                p {
+                    margin: 0 1rem;
+                    color: $color-black;
+                    font-size: 1.4rem;
+                    height: 3rem;
+                    padding: 1px .2rem;
+                    @include flex-col-center;
+                    border-radius: 6px;
+                    background: $color-white;
+                    align-items: flex-start;
+                }
+
+            }
+        }
+
+
+        &--frame {
+            max-width: 94rem;
+            height: 59rem;
+            overflow: hidden;
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid #707070;
+
+        }
+
+    }
+
+    &__full {
+        position: absolute;
+        bottom: 0rem;
+        left: 4rem;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 100%;
+        background: $color-blue;
+        font-size: 3rem;
+        color: $color-white;
+        z-index: 23;
+        transition: all .3s;
+        @include flex-row-center;
+
+        &:hover {
+            background: blueviolet;
+        }
+
+    }
+
+    &__list {
+
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ebebeb;
+
+        }
+
+        ul {
+
+            &>hr {
+                margin: 1.2rem 0;
+            }
+
+            button {
+                color: $color-heading-dark;
+                font-size: 1.2rem;
+                font-weight: 500;
+                width: 100%;
+                border-radius: 10px;
+                padding: 1.2rem 1.3rem;
+                display: flex;
+                transition: background .3s cubic-bezier(0.86, 0, 0.07, 1);
+                align-items: center;
+
+                i {
+                    margin-right: 1.6rem;
+                    font-size: 1.2rem;
+                }
+
+                &:hover {
+                    background-color: #F7F7F7;
+                }
+
+                img {
+                    width: 1.2rem;
+                    height: 1.2rem;
+                    margin-right: 1.6rem;
+                    object-fit: contain;
+                }
+
+                span {
+                    width: 1rem;
+                    height: 1rem;
+                    border-radius: 50%;
+                    margin-right: 1.6rem;
+                    display: block;
+                    background: transparent;
+                }
+
+                span.green {
+                    background: #2EAD2E;
+                }
+
+                span.orange {
+                    background: #F6612A;
+                }
+
+                span.purple {
+                    background: #8B2EAD;
+                }
+
+                span.parrot {
+                    background: #6BFF6B
+                }
+
+                span.yellow {
+                    background: #FFA64E;
+                }
+
+                span.sky {
+                    border: 1px dotted #3993F9;
+                }
+
+                span.dark {
+                    border: 1px dotted #3F1B00;
+                }
+
+                span.blue {
+                    background: #4E78FF;
+                }
+
+
+                &.active {
+                    background: #F7F7F7;
+                }
+
+            }
+        }
+
+    }
+
+    &__wave>hr {
+        margin-bottom: 5px !important;
+    }
+}
+
+
+// _______________________________________
+//         DRAW FULL ZOOM 
+// _______________________________________
+
+.dfull {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    &>a {
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        bottom: 2rem;
+        left: 2rem;
+        border-radius: 100%;
+        background: $color-blue;
+        overflow: hidden;
+        border: 2px solid #fff;
+        @include flex-row-center;
+
+        button {
+            font-size: 2rem;
+            color: $color-white;
+        }
+    }
+
+    &__map {
+        @include width-height-100;
+        overflow: hidden;
+
+        iframe {
+            @include width-height-100;
+        }
+    }
+
+}

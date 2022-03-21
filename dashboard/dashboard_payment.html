@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ✦✦✦✦✦✦✦✦✦  Favicon  ✦✦✦✦✦✦✦✦✦✦✦ -->
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+    <!-- ✦✦✦✦✦✦✦✦✦  Stylesheet File  ✦✦✦✦✦✦✦✦✦✦✦ -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- ✦✦✦✦✦✦✦✦✦  Icon Scout  ✦✦✦✦✦✦✦✦✦✦✦ -->
+    <link rel='stylesheet' href='https://unicons.iconscout.com/release/v3.0.6/css/line.css'>
+
+
+    <title>Roofruller --- Profile</title>
+</head>
+
+<body class="bg-light">
+
+    <!-- ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+                     User NAVIGATION
+     ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦ -->
+    <nav class="profileNav">
+        <div class="profileNav__wrap max-1200">
+            <div class="profileNav__logo">
+                <a href="../index.html"><img src="../img/logo.png" alt=""></a>
+            </div>
+
+            <div class="newBtn">
+                <p>Credits remaining: 24</p>
+                <button>Purchase More Images</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+                     Dashboard
+     ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦ -->
+    <section class="dash">
+        <div class="dash__wrap max-1200">
+
+            <div>
+                <div class="dash__sidebar">
+
+                    <div class="dash__sidebar__trigger">
+                        <i class="uil uil-angle-right"></i>
+                    </div>
+
+                    <div>
+                        <ul class="dash__sidebar--list">
+
+
+                            <li><a href="draw.html"><i class="uil uil-edit-alt"></i> DIY</a></li>
+                            <li><a href="draw.html"><i class="uil uil-comment-alt-edit"></i> DFY</a></li>
+                            <li><a href="profile.html"><i class="uil uil-ruler"></i> Jobs</a></li>
+                            <li><a href="profile-edit.html"><i class="uil uil-user"></i> Profile</a></li>
+
+                            <li><a href="profile-edit.html"><i class="uil uil-credit-card"></i> Purchase Credits</a>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+
+                    <div class="logout">
+                        <a href="../pages/login.html">
+                            <i class="uil uil-signout"></i>
+                            <span>Logout</span>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- Job Heading -->
+            <main class="profilePayment">
+
+                <div class="profilePayment__wrap">
+
+                    <div class="profilePayment__price">
+
+                        <h2>How many credits you want to buy?</h2>
+
+                        <div class="profilePayment__input">
+                            <input type="text" placeholder="Enter number of credits here">
+                        </div>
+
+                        <h3 class="orSelect">or select an amount</h3>
+
+
+                        <div class="profilePayment__select">
+
+                            <div>
+                                <input type="radio" name="price" id="usd-50">
+                                <label for="usd-50">50 USD</label>
+                            </div>
+
+
+                            <div>
+                                <input type="radio" name="price" id="usd-100">
+                                <label for="usd-100">100 USD</label>
+                            </div>
+
+
+                            <div>
+                                <input type="radio" name="price" id="usd-200">
+                                <label for="usd-200">200 USD</label>
+                            </div>
+
+
+
+                            <div>
+                                <input type="radio" name="price" id="usd-500" checked>
+                                <label for="usd-500">500 USD</label>
+                            </div>
+
+
+
+                            <div>
+                                <input type="radio" name="price" id="usd-700">
+                                <label for="usd-700">700 USD</label>
+                            </div>
+
+
+
+                            <div>
+                                <input type="radio" name="price" id="usd-1000">
+                                <label for="usd-1000">1000 USD</label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="profilePayment__check">
+
+                        <h1>
+                            <small>You pay</small>
+                            500 USD
+                        </h1>
+
+                        <h1>
+                            <small>You receive</small>
+                            590 Credits
+                        </h1>
+
+                        <p class="profilePayment__check--discount">
+                            <img src="../img/star.svg" alt="">
+                            18% Discount
+                        </p>
+
+                        <hr>
+
+                        <a href="#">How does it work?</a>
+                        <a href="#">500 USD x 1.18 = 590 Credits</a>
+
+                        <button><a href="#">
+                                Checkout ($500)
+                                <i class="uil uil-arrow-right"></i>
+                            </a></button>
+
+                        <div class="profilePayment__check--circle"></div>
+
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+    </section>
+
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

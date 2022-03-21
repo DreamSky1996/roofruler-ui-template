@@ -1,0 +1,517 @@
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+//     HEADER
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+
+.header {
+    width: 100%;
+    height: 72rem;
+
+    &__wrap {
+        display: grid;
+        grid-template-columns: 1fr .8fr;
+        grid-gap: 8rem;
+        height: 100%;
+        padding-top: 12rem;
+
+        &>div {
+            height: 100%;
+        }
+    }
+
+    &__left {
+
+        &>h3 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: $color-blue;
+            letter-spacing: .25em;
+            margin-bottom: 2rem;
+        }
+
+        &>h1 {
+            font-size: 4.3rem;
+            color: $color-heading-dark;
+            line-height: 1.6;
+            margin-bottom: 1.6rem;
+        }
+
+        &>p {
+            font-size: 1.6rem;
+        }
+
+
+        &--btn {
+            margin-top: 8rem;
+            display: flex;
+            align-items: center;
+
+            &>button {
+                width: 21.5rem;
+                height: 6rem;
+                background: $color-blue;
+                color: $color-white;
+                border-radius: 50px;
+                font-size: 1.6rem;
+                margin-right: 4rem;
+                transition: all .3s;
+
+                &:hover {
+                    background: #0D3883;
+                }
+            }
+
+
+
+            &>a {
+                display: flex;
+                align-items: center;
+                font-size: 1.6rem;
+                color: $color-heading-dark;
+
+                &:hover {
+                    color: $color-blue;
+                }
+
+                &>img {
+                    width: 2rem;
+                    height: 2rem;
+                    margin-right: 1.6rem;
+                }
+            }
+        }
+    }
+
+    &__right {
+
+        img {
+            margin-top: 7rem;
+        }
+    }
+}
+
+
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+//     Section Choose
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+
+.choose {
+
+    &__heading {
+        margin-bottom: 6rem;
+
+        &>h3 {
+            font-size: 1.6rem;
+            letter-spacing: .06em;
+            color: $color-blue;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+
+        &>h1 {
+            font-size: 4rem;
+            color: $color-heading-dark;
+            font-weight: bold;
+            width: 55rem;
+            line-height: 1.5;
+        }
+    }
+
+    &__wrap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3rem;
+    }
+
+    &__box {
+        padding: 3rem 4rem;
+        padding-right: 7rem;
+        background: $color-white;
+
+        &:nth-child(2) {
+            box-shadow: 10px 24px 108px #0000000D;
+        }
+
+        &--icon {
+            width: 5.63rem;
+            height: 5.4rem;
+            border-radius: 10px;
+            background: rgba($color-red, .1);
+            @include flex-col-center;
+            color: $color-red;
+            font-size: 2.7rem;
+            margin-bottom: 2.4rem;
+        }
+
+        &>h1 {
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: $color-heading-dark;
+            margin-bottom: 1.5rem;
+        }
+
+        &>p {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            margin-bottom: 4.5rem;
+        }
+
+        &>a {
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+
+
+            i {
+                font-size: 2rem;
+                margin-left: .7rem;
+            }
+
+            &:hover {
+                color: #0D3883;
+            }
+        }
+
+        &:nth-child(2) {
+            .choose__box--icon {
+                background: rgba($color-blue-light, .1);
+                color: $color-blue-light;
+            }
+
+            a {
+                color: $color-blue;
+
+                &:hover {
+                    color: #0D3883;
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            .choose__box--icon {
+                background: rgba($color-yellow, .1);
+                color: $color-yellow;
+            }
+        }
+
+
+    }
+
+
+}
+
+
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+//     Select Section
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+
+.select {
+    margin-bottom: 13.5rem;
+    margin-top: 16rem;
+
+    &__heading {
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 10rem;
+    }
+
+    &__wrap {
+        display: grid;
+        grid-template-columns: .72fr 1fr;
+        align-items: center;
+        grid-gap: 10rem;
+    }
+
+    &__left {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__right {
+
+        &>h3 {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: $color-blue-light;
+            letter-spacing: .19em;
+            margin-bottom: 1.4rem;
+        }
+
+        &>h1 {
+            font-size: 3.2rem;
+            font-weight: 500;
+            margin-bottom: 2.3rem;
+        }
+
+        &>p {
+            font-size: 1.6rem;
+            line-height: 3.2rem;
+        }
+
+        &>a>button {
+            width: 20rem;
+            height: 6.5rem;
+            border-radius: 50px;
+            background: $color-blue;
+            color: $color-white;
+            font-size: 1.6rem;
+            margin-top: 3.6rem;
+            transition: all .3s;
+            @extend .dk-hover;
+        }
+
+    }
+}
+
+
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+//     Section Quick
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+
+.quick {
+    display: grid;
+    grid-template-columns: 1fr .72fr;
+    grid-gap: 10rem;
+    align-items: center;
+    position: relative;
+    margin-bottom: 17rem;
+
+
+
+    &__dots {
+        position: absolute;
+        width: 26.2rem;
+        height: 16rem;
+        bottom: 0;
+        right: -4rem;
+        transform: translateY(120%);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+    }
+
+}
+
+
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+//     TESTIMONIALS Section
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+
+.test {
+    margin-bottom: 10rem;
+
+    &__heading {
+        margin-bottom: 5.5rem;
+
+        &>h3 {
+            font-size: 1.6rem;
+            color: $color-blue-light;
+            letter-spacing: .19em;
+            margin-bottom: 1.6rem;
+            font-weight: 400;
+        }
+
+        &>h1 {
+            font-size: 4rem;
+            line-height: 1.6;
+            width: 43rem;
+        }
+
+    }
+
+
+
+    &__wrap {
+        position: relative;
+
+
+
+        &--box {
+            display: grid;
+            grid-template-columns: .9fr 1fr;
+            grid-gap: 6.7rem;
+        }
+
+        &--left {
+            height: 41rem;
+
+            img {
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &--right {
+            margin-top: 5rem;
+
+            &>h1 {
+                font-size: 2.4rem;
+
+                small {
+                    display: block;
+                    margin-top: .8rem;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                }
+            }
+
+            &>p {
+                margin-top: 3.4rem;
+                font-size: 1.6rem;
+                line-height: 1.6;
+                padding-right: 7.5rem;
+
+            }
+
+        }
+
+    }
+
+    &__rec {
+        position: absolute;
+        width: 6.4rem;
+        height: 4.8rem;
+        border-radius: 10px;
+        background: $color-blue;
+        right: 5.5rem;
+        top: 5rem;
+        display: block;
+
+    }
+
+    &__quote {
+        position: absolute;
+        font-size: 25rem;
+        transform: rotate(10deg);
+        top: -16rem;
+        right: 10rem;
+        color: $color-black;
+        font-weight: 300;
+    }
+
+    &__dots {
+        width: 26rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translate(-15%, 50%);
+
+        img {
+            @include img-contain;
+        }
+    }
+
+}
+
+
+
+
+// ✦✦✦✦✦✦✦✦✦  Slick Slider  ✦✦✦✦✦✦✦✦✦✦✦
+
+
+.slick-dots {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 5.2rem;
+    right: 4.4rem;
+
+    button {
+        font-size: 0;
+        width: 1rem;
+        height: 1rem;
+        background: rgba($color-black, .1) !important;
+        border-radius: 50%;
+        margin: 0 .7rem;
+    }
+
+
+}
+
+li.slick-active button {
+    background: black !important;
+}
+
+
+.slick-arrow {
+    position: absolute;
+    font-size: 2.4rem;
+    bottom: 4rem;
+    z-index: 200;
+    cursor: pointer;
+    color: $color-black;
+}
+
+.slick-next {
+    right: 0rem;
+}
+
+.slick-back {
+    right: 13rem;
+}
+
+
+
+
+// ✦✦✦✦✦✦✦✦✦  Check  ✦✦✦✦✦✦✦✦✦✦✦
+
+.check {
+    width: 100%;
+    min-height: 31rem;
+    background: $color-royal-blue;
+    border-radius: 40px;
+    padding: 6rem 7rem;
+    margin-top: 22rem;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20rem;
+    box-shadow: 0 40px 46px rgba(12, 88, 209, 0.21);
+
+    &>h1 {
+        font-size: 4rem;
+        line-height: 1.4;
+        color: $color-white;
+        width: 70%;
+    }
+
+    &>div {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            font-size: 1.6rem;
+            color: rgba($color-white, .68);
+        }
+
+        button {
+            background: $color-blue;
+            font-size: 2rem;
+            font-weight: 400;
+            color: $color-white;
+            width: 20rem;
+            height: 6.5rem;
+            border-radius: 50px;
+            transition: all .3s;
+            @extend .dk-hover;
+        }
+
+    }
+
+    &__circle {
+        width: 17.2rem;
+        height: 17.2rem;
+        border-radius: 100%;
+        position: absolute;
+        top: -15%;
+        right: -2%;
+        background: rgba($color-white, .11);
+    }
+}

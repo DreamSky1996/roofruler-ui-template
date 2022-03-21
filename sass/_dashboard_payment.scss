@@ -1,0 +1,203 @@
+//______[PROFILE PAYMENT PAGE]______ 
+.profilePayment {
+    padding-right: 5rem;
+    border-radius: 1.8rem;
+    background-color: #F7F9FD;
+
+    &__wrap {
+        display: grid;
+        grid-template-columns: minmax(40rem, 1fr) minmax(300px, 52rem);
+    }
+
+    &__price {
+        padding: 4.3rem 5.7rem 7rem 3rem;
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 2.8rem;
+        }
+
+
+    }
+
+
+    &__input {
+        margin-bottom: 2.8rem;
+
+        input {
+            border: 1px solid #E5E5E5;
+            color: #AFB3B9;
+            font-size: 1.6rem;
+            text-align: center;
+            height: 5.7rem;
+            padding: 0 1.5rem;
+            display: block;
+            background-color: $color-white;
+            border-radius: 12px;
+            width: 100%;
+
+            &::placeholder {
+                color: #AFB3B9;
+            }
+        }
+
+    }
+
+    .orSelect {
+        font-size: 1.6rem;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 4.7rem;
+
+        &::before,
+        &::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: #E7E7E7;
+            border-radius: 10px;
+            display: block;
+
+        }
+    }
+
+
+    &__select {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2.3rem;
+
+        input[type='radio'] {
+            display: none;
+        }
+
+        label {
+            height: 6.7rem;
+            width: 100%;
+            background-color: $color-white;
+            font-size: 1.4rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #E5E5E5;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all .2s linear;
+        }
+
+        input[type='radio']:checked+label {
+            background-color: $color-blue;
+            color: $color-white;
+        }
+
+    }
+
+
+    &__check {
+        background-color: #073D93;
+        padding: 3.2rem 3.2rem 5.5rem 5.5rem;
+        border: 0.5px solid #E7E7E7;
+        position: relative;
+        border-radius: 0 0px 30px 30px;
+        overflow: hidden;
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: bold;
+            color: $color-white;
+
+            &:first-of-type {
+                margin-bottom: 1.7rem;
+            }
+
+            small {
+                font-size: 1.4rem;
+                font-weight: 600;
+                display: block;
+                margin-bottom: 0.9rem;
+            }
+
+        }
+
+        &--discount {
+            font-size: 1.5rem;
+            color: #FFB34B;
+            font-weight: bold;
+            margin-top: 1rem;
+
+            img {
+                width: 1.4rem;
+                height: 1.4rem;
+                object-fit: contain;
+            }
+        }
+
+        hr {
+            width: 100%;
+            height: 1px;
+            background-color: rgba($color-white, .21);
+            display: block;
+            width: 100%;
+            border: none;
+            margin: 2rem 0;
+        }
+
+        &>a {
+            font-size: 1.4rem;
+            color: rgba($color-white, .58);
+            display: block;
+            margin-bottom: 1rem;
+
+            &:hover {
+                color: $color-white;
+            }
+        }
+
+        &--circle {
+            width: 15.8rem;
+            height: 15.8rem;
+            border-radius: 50%;
+            background-color: rgba($color-white, .11);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateY(-45%);
+        }
+
+
+        &>button {
+            width: 100%;
+            height: 7.1rem;
+            margin-top: 3.5rem;
+
+            a {
+                border-radius: 40px;
+                background-color: $color-blue;
+                color: $color-white;
+                font-weight: 600;
+                font-size: 1.5rem;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all .2s linear;
+
+                i {
+                    font-size: 2rem;
+                }
+
+                &:hover {
+                    background-color: $color-blue-light;
+                }
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,77 @@
+// _______________________________________
+//        [___ EMAIL SENT PAGE ___]
+// _______________________________________
+.email {
+    padding: 3.4rem;
+    height: 100vh;
+
+    // [LOGO]
+    &__logo {
+        width: 20rem;
+        height: 4.2rem;
+        margin-left: 12rem;
+
+        img {
+            @include img-contain;
+        }
+    }
+
+    &__wrap {
+        width: 100%;
+        background-color: $color-white;
+        height: calc(100vh - 11rem);
+        @include flex-col-center;
+
+        &--img {
+            width: 28.6rem;
+            height: 22.7rem;
+            margin-bottom: 4.5rem;
+
+            img {
+                @include img-contain;
+            }
+        }
+
+        &--text {
+            text-align: center;
+
+            h2 {
+                font-weight: 600;
+                font-size: 3rem;
+                letter-spacing: -0.02em;
+                color: #1d293f;
+                margin-bottom: 1.7rem;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 1.8rem;
+                color: rgba(6, 52, 70, 0.5);
+                margin-bottom: 1.5rem;
+            }
+
+        }
+
+        &--send {
+            font-weight: 500;
+            font-size: 1.2rem;
+
+            span {
+                color: rgba(29, 41, 63, 0.5);
+                margin-right: 1.4rem;
+            }
+
+            a {
+                font-weight: 500;
+                font-size: 1.2rem;
+                color: $color-blue;
+
+                &:hover {
+                    color: #0D3883;
+                }
+            }
+        }
+
+    }
+
+}

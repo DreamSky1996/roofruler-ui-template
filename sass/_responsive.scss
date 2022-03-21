@@ -1,0 +1,1116 @@
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+//     Genral Quiries
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+
+
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+//     Laptop 1024px
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+
+
+@media only screen and (max-width: $laptop) {
+    html {
+        font-size: 50%;
+    }
+
+
+    // ✦✦✦✦✦✦✦✦✦  Navigation  ✦✦✦✦✦✦✦✦✦✦✦
+
+    .toggle {
+        display: block;
+        position: relative;
+        z-index: 99888;
+    }
+
+    .nav {
+
+        &__target {
+            position: fixed;
+            top: 0;
+            right: 0;
+            min-height: 100vh;
+            height: 100%;
+            width: 0rem;
+            background: #e4e4e4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 100;
+            transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+            opacity: 0;
+            visibility: hidden;
+            overflow: hidden;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2.5rem;
+
+                li {
+                    padding: 1.2rem 0;
+                }
+
+                a {
+                    font-size: 1.8rem;
+                }
+            }
+
+            &.active {
+                opacity: 1;
+                visibility: visible;
+                width: 45rem;
+            }
+        }
+
+    }
+
+
+    .slick-dots {
+        left: 50%;
+        bottom: -6rem;
+        right: auto;
+        transform: translateX(-50%);
+    }
+
+    .slick-next {
+        right: auto;
+        right: calc(50% - 8rem);
+        bottom: -7.5rem;
+    }
+
+    .slick-back {
+        right: auto;
+        left: calc(50% - 8rem);
+        bottom: -7.5rem;
+    }
+
+
+    // ✦✦✦✦✦✦✦✦✦  Plans Section  ✦✦✦✦✦✦✦✦✦✦✦
+    .plans {
+        grid-gap: 3rem;
+    }
+
+    // ✦✦✦✦✦✦✦✦✦  Contact Page  ✦✦✦✦✦✦✦✦✦✦✦
+    .contact {
+        grid-gap: 4rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    // ✦✦✦✦✦✦✦✦✦  SIGNUP PAGE  ✦✦✦✦✦✦✦✦✦✦✦
+    .signup {
+
+        &__wrap {
+            align-items: center;
+
+            &--left {
+                padding-right: 0;
+                position: relative;
+                z-index: 2;
+            }
+        }
+    }
+
+}
+
+
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+//     Tablet Screen 768px
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+
+@media only screen and (max-width: $tablet) {
+
+    // ✦✦✦✦✦✦✦✦✦  Header  ✦✦✦✦✦✦✦✦✦✦✦
+
+    .rectangles {
+        left: auto;
+        right: 5%;
+    }
+
+    .dot {
+        display: none;
+    }
+
+    // Header   
+    .header {
+        height: auto;
+        margin-bottom: 12rem;
+
+        &__wrap {
+            grid-template-columns: 1fr;
+        }
+    }
+
+
+
+    // Choose   
+
+    .choose {
+
+        &__heading {
+            margin-bottom: 3rem;
+
+            &>h1 {
+                font-size: 3rem;
+                line-height: 1.4;
+            }
+        }
+
+        &__wrap {
+            grid-gap: 2rem;
+        }
+
+        &__box {
+            padding: 2.5rem;
+            padding-right: 0rem;
+        }
+    }
+
+
+    // Select
+
+    .select {
+        margin-top: 10rem;
+        margin-bottom: 8rem;
+
+        &__heading {
+            margin-bottom: 6rem;
+        }
+
+        &__wrap {
+            grid-gap: 4rem;
+        }
+
+        &__left {
+            img {
+                object-fit: cover !important;
+            }
+        }
+    }
+
+
+    // Quick
+
+    .quick {
+        grid-gap: 4rem;
+        margin-bottom: 12rem;
+    }
+
+
+
+    // Test  
+
+    .test {
+
+        &__heading {
+            margin-bottom: 3rem;
+
+            &>h1 {
+                line-height: 1.3;
+                font-size: 3rem;
+            }
+        }
+
+        &__wrap {
+
+            &--box {
+                grid-gap: 3rem;
+            }
+
+            &--left {
+                height: 30rem;
+            }
+
+            &--right>p {
+                padding-right: 2rem;
+            }
+        }
+
+    }
+
+
+
+    // Check
+
+    .check {
+        padding: 4.5rem;
+        margin-bottom: 10rem;
+        min-height: 26rem;
+
+        &>h1 {
+            font-size: 3rem;
+            line-height: 1.3;
+            width: 80%;
+        }
+
+        &__circle {
+            top: -7rem;
+            right: -5rem;
+        }
+    }
+
+
+    // Footer   
+
+    .footer {
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 3rem;
+        grid-row-gap: 10rem;
+
+        &__about {
+            grid-column: 1/-1;
+            text-align: center;
+
+            &>a img {
+                @include margin-center;
+            }
+
+            &--address {
+                justify-content: center;
+                margin-bottom: .4rem !important;
+            }
+        }
+    }
+
+
+
+    // ✦✦✦✦✦✦✦✦✦  Feature Page  ✦✦✦✦✦✦✦✦✦✦✦
+
+    //     Genral Grid of minl maxl etc
+    .minl-maxr,
+    .maxl-minr {
+        grid-template-columns: 1fr;
+        grid-gap: 6rem;
+    }
+
+    .minl-maxr {
+
+        &>div:first-child {
+            order: 3;
+        }
+    }
+
+
+    // ✦✦✦✦✦✦✦✦✦  Plan Section  ✦✦✦✦✦✦✦✦✦✦✦
+
+    .plan {
+        flex-direction: column;
+
+        &__heading {
+            width: auto;
+        }
+
+        &__tabs {
+            width: 25rem;
+            margin-top: 2.5rem;
+        }
+    }
+
+    .plans {
+        grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+        grid-gap: 6rem;
+    }
+
+
+    // ✦✦✦✦✦✦✦✦✦  Contact Page  ✦✦✦✦✦✦✦✦✦✦✦
+    .contact {
+        grid-template-columns: 1fr;
+        grid-gap: 10rem;
+
+        &__form--group {
+
+            textarea,
+            input {
+                max-width: 100%;
+            }
+        }
+    }
+
+    // ✦✦✦✦✦✦✦✦✦  SIGNUP PAGE  ✦✦✦✦✦✦✦✦✦✦✦
+
+    .signup {
+        height: auto;
+
+        &__wrap {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-gap: 8rem;
+
+            &--left {
+                order: 3;
+            }
+
+            &--right {
+                height: 40rem;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+
+}
+
+
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+//     BreakPoint On 600px
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+
+@media only screen and (max-width: $bp-600) {
+
+    //  Header
+    .header {
+
+        &__wrap {
+            padding-top: 5rem;
+        }
+
+        &__left {
+
+            &>h3 {
+                margin-bottom: 1rem;
+            }
+
+            &>h1 {
+                font-size: 3rem;
+                line-height: 1.3;
+            }
+
+            &--btn {
+                margin-top: 4rem;
+            }
+        }
+
+        &__right img {
+            margin-top: 0;
+        }
+    }
+
+    .rectangles {
+        display: none;
+    }
+
+    //  Choose
+
+    .choose {
+
+        &__heading {
+
+            &>h1 {
+                width: 100%;
+            }
+        }
+
+        &__wrap {
+            grid-template-columns: 1fr;
+        }
+
+    }
+
+    //  Select
+    .select {
+        margin-bottom: 12rem;
+
+        &__heading {
+            font-size: 2.7rem;
+        }
+
+        &__wrap {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    //  Quick
+
+    .quick {
+        grid-template-columns: 1fr;
+
+        &__img {
+            order: -1;
+        }
+
+        &__dots {
+            display: none;
+        }
+    }
+
+    //  Test  
+    .test {
+
+        &__heading {
+            &>h1 {
+                width: 100%;
+            }
+        }
+
+        &__rec,
+        &__quote,
+        &__dots {
+            display: none;
+        }
+
+        &__wrap--box {
+            margin-top: 5rem;
+            width: 80%;
+            @include margin-center;
+            grid-template-columns: 1fr;
+        }
+
+    }
+
+    //  Check
+
+    .check {
+        &>h1 {
+            font-size: 2.5rem;
+        }
+
+        &>div {
+            flex-wrap: wrap;
+
+            p {
+                width: 100%;
+            }
+
+            a {
+                margin-top: 3rem;
+                display: block;
+                margin-left: auto;
+            }
+        }
+    }
+
+    //  Footer
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 6rem;
+        justify-items: center;
+    }
+
+
+    //      AllF HEADING
+    .allf-heading {
+        width: auto;
+    }
+
+}
+
+
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+//     Mobile View Start 425px
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+
+@media only screen and (max-width: $mobile) {
+    #wrapper {
+        padding: 0 2rem;
+    }
+
+    .nav {
+        height: 8rem;
+    }
+
+    .nav__target.active {
+        width: 100%;
+    }
+
+    .test__wrap--box {
+        width: 100%;
+    }
+
+
+    .check {
+        padding: 5rem 2rem;
+        border-radius: 10px;
+
+        &>h1 {
+            width: 100%;
+        }
+    }
+
+    // ✦✦✦✦✦✦✦✦✦  Contact Page  ✦✦✦✦✦✦✦✦✦✦✦
+
+    .contact {
+        padding: 0;
+
+        &__info--box {
+            min-width: 100%;
+
+            &>p {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+// _______________________________________
+//         FOR DASHBOARD
+// _______________________________________
+
+// ------------  [PROFILE PAGE]  ------------
+
+@media only screen and (max-width: $laptop) {
+
+    // ------------  [Profile Navbar]  ------------
+    .profileNav {
+        width: 100%;
+
+        &__wrap {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            height: 11rem;
+            width: 100%;
+        }
+
+    }
+
+    // ------------  [PROFILE PAGE]  ------------
+
+    .dash {
+
+        &__wrap {
+            grid-template-columns: 1fr;
+        }
+
+        &__sidebar {
+            overflow: hidden;
+            width: 3rem;
+            background-color: $color-white;
+            position: fixed;
+            top: 11rem;
+            left: 0;
+            justify-content: start;
+            transition: all .3s;
+            padding-top: 7rem;
+
+            &>div:not(:first-child) {
+                opacity: 0;
+                transition: all .4s;
+                visibility: hidden;
+            }
+
+            .logout {
+                margin-top: 5rem;
+            }
+
+            &__trigger {
+                position: fixed;
+                top: 12rem;
+                left: 1rem;
+                width: 7rem;
+                height: 7rem;
+                border-radius: 50%;
+                background-color: $color-blue;
+                color: $color-white;
+                border: 6px solid $color-white;
+                border-left: 0;
+                z-index: 100;
+                @include flex-row-center;
+                font-size: 4rem;
+                transition: all .3s;
+
+                &.active {
+                    left: 26rem;
+
+                    i {
+                        transform: rotate(180deg);
+                    }
+                }
+
+            }
+
+            &.active {
+                width: 30rem;
+                padding: 0 3rem;
+                padding-top: 7rem;
+
+
+
+                &>div {
+                    opacity: 1 !important;
+                    visibility: visible !important;
+                }
+            }
+        }
+
+        &__detail {
+            margin-left: 5rem;
+        }
+
+    }
+
+
+    // ------------  [DASHBOARD MAP ZOOM PAGE DZOOM]  ------------
+
+    .draw {
+
+        &__box {
+            width: 100%;
+            max-width: 100% !important;
+        }
+    }
+
+    .dzoom {
+        grid-template-columns: 1fr;
+
+        &__right {}
+
+        &__list {
+            display: flex;
+            justify-content: space-around;
+
+            ul>hr:first-child {
+                display: none;
+            }
+        }
+
+        &__map {
+            padding: 0 2rem;
+
+            &--frame {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            &--text {
+                top: 0;
+                left: 0;
+            }
+
+        }
+
+    }
+
+    .dash.profile-edit {
+        .dash__sidebar {
+            position: static;
+            width: 100%;
+            height: 6rem;
+            padding: 1rem 2rem;
+            border-radius: 7px;
+
+            .profile-side {
+                display: flex;
+                align-items: center;
+
+
+                &>a {
+                    margin-bottom: 0;
+                    margin-right: 2rem;
+                }
+
+                &>h1 {
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: $bp-850) {
+
+    .dzoom {
+
+        &__left {
+
+            &--title {
+                flex-direction: column;
+                align-items: flex-start;
+
+                &--name {
+                    margin-bottom: 2rem;
+                }
+            }
+
+            &--download {
+                align-self: flex-end;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: $tablet) {
+
+    // ------------  [Profile Page]  ------------
+    .dash {
+
+        &__detail {
+
+            &--heading {
+
+                form {
+                    width: 25rem;
+                }
+            }
+
+            .jbData {
+                padding-right: 25rem;
+                width: 85vw;
+                overflow: scroll;
+            }
+
+            .jbScroll {
+                overflow: scroll;
+                width: 800px;
+            }
+
+        }
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: $bp-600) {
+
+    .profileNav {
+        height: 8rem;
+
+        &__wrap {
+            height: 8rem;
+            padding: 1rem 2rem;
+        }
+
+        &__logo {
+            width: 15rem;
+        }
+
+        &__user {
+
+            &--name {
+
+                h1 {
+                    font-size: 1.5rem;
+                    margin-bottom: .5rem;
+                }
+            }
+
+        }
+    }
+
+
+    .jbData {
+        width: 85vw !important;
+    }
+
+    .dash {
+        margin-top: 8rem;
+
+        &__sidebar {
+            top: 8rem;
+
+            &__trigger {
+                top: 8rem;
+            }
+        }
+
+        &__detail {
+            margin-left: 0;
+
+            &--heading {
+                flex-direction: column;
+
+                &>h1 {
+                    text-align: left;
+                    align-self: flex-start;
+                }
+
+                &>form {
+                    align-self: flex-end;
+                    width: 28rem;
+                }
+
+            }
+        }
+
+    }
+
+
+    // ------------  [Draw page]  ------------
+    .draw {
+        padding-top: 2rem;
+
+        &__box {
+
+            &--btn {
+
+                button {
+                    width: 100px !important;
+                }
+            }
+        }
+
+    }
+
+    .genral {
+
+        &__wrap {
+
+            &--form {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+
+    //  POPUP
+
+    .popup {
+        padding: 0 2rem;
+
+
+        &__wrap {
+            height: 75vh;
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar {
+                width: 5px;
+                background-color: #eee;
+                border-radius: 10px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: gray;
+                border-radius: 10px;
+            }
+
+            &::-webkit-scrollbar-corner {
+                border-radius: 10px;
+            }
+        }
+
+
+        &__box {
+
+
+            &--pay {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: $bp-700) {
+
+    // [INBOX PAGE]
+    .inbox {
+
+        &__wrap {
+            height: auto;
+            padding: 2rem;
+        }
+
+        &__box {
+            padding: 2.5rem;
+
+            &--heading {
+                font-size: 2.5rem;
+            }
+
+            &--create,
+            &--cont {
+                font-size: 1.6rem;
+            }
+
+        }
+
+        &__logo {
+            width: 16rem;
+            height: 4rem;
+        }
+
+
+    }
+
+    // [EMAIL SENT PAGE]
+    .email {
+
+        &__logo {
+            @include margin-center;
+        }
+
+        &__wrap {
+            &--text {
+                h2 {
+                    font-size: 2.5rem;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+
+            &--send {
+                font-size: 1.5rem;
+
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: $mobile) {
+
+    .max-1200 {
+        padding: 0 4rem;
+        padding-right: 2.5rem;
+    }
+
+    .dash {
+
+
+
+        &__manage {
+            flex-direction: column;
+
+            &--right {
+                order: -1;
+                align-self: flex-end;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+
+    .dzoom__map {
+        padding: 0;
+
+        a.dzoom__full {
+            bottom: 1.2rem;
+            left: 1.2rem;
+        }
+    }
+
+    .dzoom__left--title {
+        margin-bottom: 4rem;
+    }
+
+    .dzoom__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3rem;
+
+        ul:nth-child(2) {
+            order: 3;
+
+            hr:first-child {
+                display: block;
+            }
+        }
+    }
+
+    .allf-heading h1 {
+        font-size: 4rem;
+    }
+
+}
+
+
+
+
+//______[PAYMENT METHOD PAGE]______ 
+@media only screen and (max-width: $laptop) {
+    .dash__wrap.savedBox {
+        grid-template-columns: max-content 1fr;
+        grid-gap: 5rem;
+    }
+
+    .profilePayment {
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: $tablet) {
+    .saved {
+        grid-template-columns: 1fr;
+
+        &__back {
+
+            a {
+                width: 4.5rem;
+                height: 4.5rem;
+            }
+
+        }
+    }
+
+
+    .profilePayment__wrap {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .profilePayment__price {
+        padding: 1.4rem;
+        padding-left: 5rem;
+    }
+
+    .profilePayment__check {
+        padding: 2rem;
+    }
+
+}
+
+
+
+//______[NEW PRICE PLAN PAGE]______ 
+@media only screen and (max-width: $laptop) {
+    .newPlan {
+
+        &__items {
+
+            br {
+                display: none;
+            }
+
+            ul {
+                flex: 1;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $tablet) {
+    .newPlan {
+
+        &__items {
+            flex-direction: column;
+            gap: 2.3rem;
+        }
+
+    }
+
+    .newBtn {
+        gap: 1.5rem;
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        button {
+            font-size: 1.2rem;
+            width: 14rem;
+            display: none;
+        }
+    }
+}
+
+
+@media only screen and (max-width: $bp-500) {
+    .newPlan__wrap {
+        padding: 3rem;
+    }
+}

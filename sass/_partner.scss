@@ -1,0 +1,94 @@
+// ----------------------------------------
+//     Partner
+// ----------------------------------------
+.partner-choose {
+    margin-top: 9.6rem;
+
+    .choose__wrap {
+        &>div:first-child {
+            background-color: transparent;
+        }
+
+        &>div:last-child {
+            background-color: transparent;
+        }
+    }
+}
+
+.tpart {
+    margin-top: 10rem;
+    width: 100%;
+
+    &__heading {
+        text-align: center;
+
+        &>h1 {
+            font-size: 3.2rem;
+            font-weight: 600;
+            color: $color-heading-dark;
+        }
+
+        &>p {
+            font-size: 1.6rem;
+            margin-top: 1.2rem;
+        }
+    }
+
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 3.2rem;
+        position: relative;
+
+        &>.slick-dots {
+            top: auto;
+            left: 50%;
+            bottom: -7rem;
+            right: auto;
+            transform: translateX(-50%);
+        }
+    }
+
+    .partner-back,
+    .partner-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 2.6rem;
+        color: $color-heading-dark;
+
+        @media only screen and (max-width: $bp-1200) {
+            display: none !important;
+        }
+    }
+
+
+
+    .partner-back {
+        right: auto;
+        left: -5%;
+    }
+
+    .partner-next {
+        left: auto;
+        right: -5%;
+    }
+
+    &__box {
+        width: 25rem;
+        height: 17.7rem;
+        background: $color-white;
+        padding: 1.5rem;
+        margin: 0 1.1rem;
+
+        @media only screen and (max-width: $bp-600) {
+            width: auto;
+        }
+
+        img {
+            @include img-contain;
+        }
+    }
+}

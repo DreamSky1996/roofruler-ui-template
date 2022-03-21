@@ -1,0 +1,304 @@
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+//     Max width for dashboard
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+.max-1200 {
+    max-width: 100%;
+    padding: 0 5rem;
+    @include margin-center;
+    overflow: hidden;
+}
+
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+//     Dashboard
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+
+
+
+.dash {
+    width: 100%;
+    margin-top: 4.5rem;
+    padding-bottom: 5rem;
+    height: auto;
+
+
+
+    &__wrap {
+        display: grid;
+        grid-template-columns: 19rem 1fr;
+        grid-gap: 3.5rem;
+        height: 100%;
+    }
+
+    &__sidebar {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        position: fixed;
+        background: $color-white;
+        width: 19rem;
+        top: 0;
+        left: 0;
+        padding-top: 14rem;
+        z-index: 3;
+        padding-bottom: 6rem;
+
+
+        &__trigger {
+            display: none;
+        }
+
+        &--list {
+            width: 100%;
+
+            &>li {
+                padding: 1.2rem 2rem;
+                color: $color-white;
+                font-size: 1.6rem;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-weight: 500;
+                border-bottom: 1px solid #ebebeb;
+                position: relative;
+                z-index: 2;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    width: 6px;
+                    height: 100%;
+                    background: $color-blue;
+                    z-index: -1;
+                    transition: all .3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                }
+
+
+
+
+                a {
+                    color: $color-blue;
+                    transition: all .3s;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                }
+
+                a i {
+                    font-size: 2rem;
+                    margin-right: .6rem;
+                }
+
+                &:hover::before {
+                    width: 100%;
+                }
+
+                &:hover a {
+                    color: $color-white;
+                }
+            }
+        }
+
+
+        .logout {
+            text-align: center;
+            padding-top: 1.7rem;
+            margin-top: 9rem;
+
+            a {
+                color: $color-blue;
+                font-size: 1.6rem;
+                padding: 0 2rem;
+                font-weight: 600;
+                display: flex;
+                transition: all .3s;
+                align-items: center;
+                @extend .link;
+            }
+
+            i {
+                font-size: 2rem;
+                margin-right: .6rem;
+            }
+        }
+    }
+
+
+    &__detail {
+        grid-column: 2/-1;
+
+        //  Heading
+        &--heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+
+            &>h1 {
+                color: $color-heading-light;
+                font-size: 3.5rem;
+            }
+
+            &>form {
+                background: $color-white;
+                height: 4.6rem;
+                padding: 0 1.6rem;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                width: 34rem;
+
+                label {
+                    font-size: 1.4rem;
+                    color: $color-heading-light;
+                }
+
+                input {
+                    padding: 0 1.4rem;
+                    color: $color-heading-light;
+                    font-size: 1.2rem;
+                    width: 100%;
+                    height: 100%;
+
+                    &::placeholder {
+                        color: $color-heading-light;
+                        font-family: $font;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+
+    &__manage {
+        margin-top: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &--left {
+            color: $color-heading-light;
+            font-size: 1.3rem;
+            font-family: $font;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+
+        &--box {
+            display: flex;
+            align-items: center;
+
+            input {
+                background: transparent;
+                width: 4rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                font-weight: 600;
+                color: $color-heading-light;
+                font-family: $font;
+            }
+
+            p {
+                margin: 0 1rem;
+            }
+        }
+
+        &--right {
+            display: flex;
+            align-items: center;
+
+            button {
+                width: 5rem;
+                height: 2.5rem;
+                background: $color-white;
+                border-radius: 4px;
+                color: $color-blue;
+                font-size: 2.2rem;
+                @include flex-row-center;
+                margin: 0 .3rem;
+            }
+        }
+
+    }
+
+}
+
+.jbData {
+    padding: 3rem 2.1rem;
+    background: $color-white;
+    box-shadow: 0px 0px 3px #07070703;
+    border-radius: 10px;
+
+
+    &__header {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #063446;
+        padding: 0 2rem;
+        display: grid;
+        grid-template-columns: 1.2fr 1fr 2.5fr 1.2fr repeat(2, 1.5fr) 1fr;
+        grid-gap: 3rem;
+        margin-bottom: 2rem;
+
+        &>div {
+            display: flex;
+            align-items: center;
+
+            span {
+                white-space: pre;
+            }
+
+            i {
+                margin-left: 1rem;
+                color: #DADADA
+            }
+        }
+    }
+
+
+    &__row {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr 2.5fr 1.2fr repeat(2, max-content) 1fr;
+        grid-gap: 3rem;
+        height: 6rem;
+        background: $color-white;
+        align-items: center;
+        padding: 0 2rem;
+        font-size: 1.2rem;
+        color: $color-heading-light;
+
+        &:hover {
+            cursor: pointer;
+            background: rgba($color-black, .05);
+        }
+
+        &:nth-child(odd) {
+            background: rgba($color-blue, .03);
+
+            &:hover {
+                background: rgba($color-black, .03);
+            }
+        }
+
+        i.uil-edit {
+            color: $color-blue;
+            font-size: 1.6rem;
+            margin: 0 .3rem;
+            cursor: pointer;
+        }
+
+        i.uil-trash-alt {
+            cursor: pointer;
+            margin: 0 .3rem;
+            color: $color-blue;
+            font-size: 1.6rem;
+        }
+    }
+
+}

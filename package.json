@@ -1,0 +1,18 @@
+{
+  "name": "roofruler-ui",
+  "version": "1.0.0",
+  "description": "roofruler-ui",
+  "watches": {
+    "sass": "sass/**"
+  },
+  "scripts": {
+    "sass": "node-sass sass/ -o css/",
+    "dev": "rerun-script"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "rerun-script": "^0.6.0"
+  }
+}

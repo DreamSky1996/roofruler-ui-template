@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ✦✦✦✦✦✦✦✦✦  Favicon  ✦✦✦✦✦✦✦✦✦✦✦ -->
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+    <!-- ✦✦✦✦✦✦✦✦✦  Stylesheet File  ✦✦✦✦✦✦✦✦✦✦✦ -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- ✦✦✦✦✦✦✦✦✦  Icon Scout  ✦✦✦✦✦✦✦✦✦✦✦ -->
+    <link rel='stylesheet' href='https://unicons.iconscout.com/release/v3.0.6/css/line.css'>
+
+
+    <title>Roffruller --- Profile</title>
+</head>
+
+<body class="bg-light">
+
+    <!-- ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+                     User NAVIGATION
+     ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦ -->
+    <nav class="profileNav">
+        <div class="profileNav__wrap max-1200">
+            <div class="profileNav__logo">
+                <a href="../index.html"><img src="../img/logo.png" alt=""></a>
+            </div>
+
+            <div class="profileNav__user">
+                <div class="profileNav__user--img">
+                    <img src="../img/profile-user.png" alt="">
+                </div>
+
+                <div class="profileNav__user--name">
+                    <h1>Spencer Crawford</h1>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+                     Dashboard
+     ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦ -->
+    <section class="dash profile-edit">
+        <div class="dash__wrap max-1200">
+
+            <div>
+                <div class="dash__sidebar">
+
+                    <div class="profile-side">
+
+                        <a href="profile.html" class="lg-hover"><button><i class="uil uil-arrow-left"></i></button></a>
+
+                        <h1>Profile</h1>
+
+                    </div>
+
+                    <div class="logout">
+                        <a href="../pages/login.html">
+                            <i class="uil uil-signout"></i>
+                            <span>Logout</span>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- ✦✦✦✦✦✦✦✦✦  PROFILE EDIT  ✦✦✦✦✦✦✦✦✦✦✦ -->
+
+            <div class="genral">
+                <div class="genral__wrap">
+                    <div class="genral__wrap--profile">
+                        <img src="../img/profile-user.png" alt="">
+                        <div>
+                            <h1>Spencer Crawford</h1>
+                            <p>Update picture</p>
+                        </div>
+                    </div>
+
+                    <div class="genral__wrap--tabs">
+                        <button class="active" onclick="tabSwitch('#genral-profile' , event)">General</button>
+                        <button onclick="tabSwitch('#genral-password', event)">Password</button>
+                        <button onclick="tabSwitch('#genral-bill', event)">Billing</button>
+                    </div>
+                    <hr>
+
+                    <div class="tab-cont" id="genral-profile">
+
+                        <form action="#" class="genral__wrap--form">
+
+                            <div class="genral__wrap--group">
+                                <label for="genral-name">First name</label>
+                                <input type="text" name="genral-name" id="genral-name">
+                            </div>
+
+                            <div class="genral__wrap--group">
+                                <label for="last-name">Last name</label>
+                                <input type="text" name="last-name" id="last-name">
+                            </div>
+
+                            <div class="genral__wrap--group">
+                                <label for="genral-mail">Email</label>
+                                <input type="email" name="genral-mail" id="genral-mail">
+                            </div>
+
+                            <div class="genral__wrap--group">
+                                <label for="genral-cell">Cell number</label>
+                                <input type="number" name="genral-cell" id="genral-cell">
+                            </div>
+
+                            <div class="genral__wrap--group">
+                                <label for="genral-adress">Adress</label>
+                                <input type="text" name="genral-adress" id="genral-adress">
+                            </div>
+
+                            <div class="genral__wrap--group">
+                                <label for="genral-company">Company</label>
+                                <input type="text" name="genral-company" id="genral-company">
+                            </div>
+
+                            <button class="dk-hover" type="submit">Save Changes</button>
+
+                        </form>
+
+                    </div>
+
+                    <div class="tab-cont" id="genral-password">
+
+                        <form action="#">
+                            <div class="genral-group">
+                                <label for="cu-pass">Current Password</label>
+                                <input type="password" name="cu-pass" id="cu-pass">
+                            </div>
+
+                            <div class="genral-group">
+                                <label for="new-pass">New Password</label>
+                                <input type="password" name="new-pass" id="new-pass">
+                            </div>
+
+                            <div class="genral-group">
+                                <label for="conf-pass">Confirm Password</label>
+                                <input type="password" name="conf-pass" id="conf-pass">
+                            </div>
+
+                            <button type="submit" class="dk-hover">Change Password</button>
+
+                        </form>
+
+                    </div>
+
+                    <div class="tab-cont" id="genral-bill">
+
+                        <div class="bill-box">
+                            <div class="bill-box__card">
+                                <div class="bill-box__card--img">
+                                    <img src="../img/credit-card.svg" alt="">
+                                </div>
+
+                                <div class="bill-box__card--text">
+                                    <h1>VISA **** 1256</h1>
+                                    <p>Spencer Crawford</p>
+                                    <p>Expired in 10/2021</p>
+                                </div>
+
+                            </div>
+
+                            <div class="bill-box__card--edit">
+                                <button><i class="uil uil-edit"></i></button>
+                                <button><i class="uil uil-trash-alt"></i></button>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="add-card link">
+                            <span><i class="uil uil-plus"></i></span>
+                            Add new payment method
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <div id="popup" class="popup">
+        <div class="popup__wrap">
+            <h1 class="popup__heading">New Payment Method</h1>
+            <hr>
+
+
+            <div class="popup__box">
+
+                <form class="popup__box--pay">
+                    <div class="popup__box--group">
+                        <label for="cardnum">Card Number</label>
+                        <input type="text" id="cardnum">
+                    </div>
+
+                    <div class="popup__box--group sub-grid">
+                        <div>
+                            <label for="expnum">Expires</label>
+                            <input type="text" id="expnum">
+                        </div>
+
+                        <div>
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv">
+                        </div>
+                    </div>
+
+                    <div class="popup__box--group span-all">
+                        <label for="namenum">Name</label>
+                        <input type="text" id="namenum">
+                    </div>
+
+                    <div class="popup__box--group span-all">
+                        <label for="adressnum">Adress</label>
+                        <input type="text" id="adressnum">
+                    </div>
+
+                    <div class="popup__box--group">
+                        <label for="citynum">City</label>
+                        <input type="text" id="citynum">
+                    </div>
+
+                    <div class="popup__box--group">
+                        <label for="countrynum">Country</label>
+                        <input type="text" id="countrynum">
+                    </div>
+
+
+                    <div class="popup__box--group">
+                        <label for="provnum">Province</label>
+                        <input type="text" id="provnum">
+                    </div>
+
+
+                    <div class="popup__box--group">
+                        <label for="postalnum">Postal Code</label>
+                        <input type="text" id="postalnum">
+                    </div>
+
+                </form>
+
+
+            </div>
+
+            <hr>
+
+            <div class="popup__btn">
+                <button class="hide-popup lg-hover">Cancel</button>
+                <button class="dk-hover">Save</button>
+            </div>
+
+            <button class="popup__close hide-popup"><i class="uil uil-times"></i></button>
+
+        </div>
+    </div>
+
+
+
+
+    <script>
+        function tabSwitch(id, event) {
+            var target = document.querySelector(id);
+            var tabBox = document.querySelectorAll(".tab-cont");
+            var triggers = document.querySelectorAll(".genral__wrap--tabs > button")
+            triggers.forEach(el => {
+                el.classList.remove("active");
+            })
+
+            tabBox.forEach(el => {
+                el.style.display = "none";
+            })
+
+            target.style.display = "block";
+
+
+            event.target.classList.add("active");
+        }
+
+        window.onload = function () {
+            document.querySelector(".genral__wrap--tabs > .active").click();
+        }
+
+
+
+        var cardBtn = document.querySelector(".add-card");
+        var popup = document.querySelector("#popup");
+        var closePopup = document.querySelectorAll(".hide-popup");
+
+
+        cardBtn.addEventListener("click", () => {
+            popup.classList.add("show");
+        })
+
+        closePopup.forEach(el => {
+            el.addEventListener("click", () => {
+                popup.classList.remove("show");
+            })
+        })
+    </script>
+
+</body>
+
+</html>

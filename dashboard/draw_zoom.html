@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ✦✦✦✦✦✦✦✦✦  Favicon  ✦✦✦✦✦✦✦✦✦✦✦ -->
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+    <!-- ✦✦✦✦✦✦✦✦✦  Stylesheet File  ✦✦✦✦✦✦✦✦✦✦✦ -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- ✦✦✦✦✦✦✦✦✦  Icon Scout  ✦✦✦✦✦✦✦✦✦✦✦ -->
+    <link rel='stylesheet' href='https://unicons.iconscout.com/release/v3.0.6/css/line.css'>
+
+
+    <title>Roffruller --- Draw</title>
+</head>
+
+<body class="bg-light">
+
+
+    <div class="dzoom">
+        <div class="dzoom__left">
+
+            <!-- //  tITLE -->
+            <div class="dzoom__left--title">
+                <div class="dzoom__left--title--name">
+                    <a href="draw.html" class="dback lg-hover"><i class="uil uil-arrow-left"></i></a>
+                    <div>
+                        <p>Adress:</p>
+                        <h1>Sydney CBD, Wooloomooloo NSW 2011, Australia</h1>
+                    </div>
+
+                    <button class="dedit"><i class="uil link uil-pen"></i></button>
+                </div>
+
+                <div class="dzoom__left--download">
+                    <button class="dk-hover"><img src="../img/floppy-disk.svg" alt=""> Save</button>
+                    <button class="dk-hover"><img src="../img/pdf (5).png" alt=""> Download PDF</button>
+                </div>
+
+            </div>
+
+            <!-- mAP INCLUDE ZOOMED -->
+
+            <div class="dzoom__map">
+
+                <div class="dzoom__map--text">
+                    <div>
+                        <button class="active">All</button>
+                        <p>1289 Sq Ft</p>
+                    </div>
+
+                    <div>
+                        <button>Area 1</button>
+                        <p>1201 Sq Ft</p>
+                    </div>
+
+                    <div>
+                        <button>Area 2</button>
+                        <p>88 Sq Ft</p>
+                    </div>
+                </div>
+
+
+                <div class="dzoom__map--frame">
+                    <iframe style="width: 100%; height: 100%;" frameborder="0" scrolling="no" marginheight="0"
+                        marginwidth="0" id="gmap_canvas"
+                        src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Lahore+()&amp;t=h&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                    <a href='https://add-map.com/'>how to embed a google map into a website</a>
+                    <script type='text/javascript'
+                        src='https://embedmaps.com/google-maps-authorization/script.js?id=bde3633087e4386beb4db466a59d247f060d5176'>
+                    </script>
+                </div>
+
+                <a href="draw_full.html" class="dzoom__full dk-hover"><i class="uil uil-times-circle"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="dzoom__right">
+
+            <div class="dzoom__list">
+                <ul>
+                    <li><button><i class="uil uil-pen"></i> Draw Line</button></li>
+                    <li><button><img src="../img/plus-arrow.svg" alt=""> Move Vertex</button></li>
+
+                    <hr>
+
+                    <li><button><i class="uil uil-times"></i> Clear All</button></li>
+                    <li><button><i class="uil uil-trash-alt"></i> Delete Facets</button></li>
+                </ul>
+
+
+                <ul class="dzoom__wave">
+                    <hr>
+
+                    <li><button class="active"><span class="green"></span> Waves</button></li>
+                    <li><button><span class="orange"></span> Valleys</button></li>
+                    <li><button><span class="purple"></span> Hips</button></li>
+                    <li><button><span class="parrot"></span> Ridges</button></li>
+                    <li><button><span class="yellow"></span> Rakes</button></li>
+                    <li><button><span class="sky"></span> Wall Flashing</button></li>
+                    <li><button><span class="dark"></span> Step Flashing</button></li>
+                    <li><button><span class="blue"></span> Unspecified</button></li>
+
+                </ul>
+
+                <ul class="dzoom__edit">
+                    <hr>
+                    <li><button><img src="../img/edit-triangle.svg" alt=""> Edit Pitch</button></li>
+                    <li><button><img src="../img/arrow-dots.svg" alt="">Edit Length</button></li>
+                    <hr>
+                    <li><button><img src="../img/path-stand.svg" alt=""> Street View</button></li>
+                    <li><button><img src="../img/triangle.svg" alt="">Pitch View</button></li>
+                </ul>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

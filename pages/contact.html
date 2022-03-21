@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ✦✦✦✦✦✦✦✦✦  Favicon  ✦✦✦✦✦✦✦✦✦✦✦ -->
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+    <!-- ✦✦✦✦✦✦✦✦✦  Stylesheet File  ✦✦✦✦✦✦✦✦✦✦✦ -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- ✦✦✦✦✦✦✦✦✦  Icon Scout  ✦✦✦✦✦✦✦✦✦✦✦ -->
+    <link rel='stylesheet' href='https://unicons.iconscout.com/release/v3.0.6/css/line.css'>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <title>Roffruller --- website</title>
+</head>
+
+<body>
+
+    <!-- ✦✦✦✦✦✦✦✦✦  Back Effects  ✦✦✦✦✦✦✦✦✦✦✦ -->
+    <div class="rectangles"><img src="../img/rectagles-of-two.svg" alt=""></div>
+    <div class="dot dot-1"><img src="../img/dots.svg" alt=""></div>
+
+    <!-- ✦✦✦✦✦✦✦✦✦  Wrapper  ✦✦✦✦✦✦✦✦✦✦✦ -->
+    <div id="wrapper">
+
+
+        <!-- ✦✦✦✦✦✦✦✦✦  Navigation  ✦✦✦✦✦✦✦✦✦✦✦ -->
+
+        <nav class="nav">
+            <div class="nav__wrap">
+                <div class="nav__logo">
+                    <a href="../index.html"><img src="../img/logo.png" alt=""></a>
+                </div>
+
+                <div class="nav__target">
+
+                    <div class="nav__list">
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="plans.html">Plans</a></li>
+                            <li><a href="features.html">Features</a></li>
+                            <li><a href="contact.html" class="active">Contact</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="nav__sign">
+                        <a href="login.html"><button class="nav__sign--in">Log in</button></a>
+                        <a href="signup.html"><button class="nav__sign--up">Sign Up</button></a>
+                    </div>
+                </div>
+
+                <div class="toggle">
+                    <button class="menu"
+                        onclick="goTo(), this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                        aria-label="Main Menu">
+                        <svg width="60" height="60" viewBox="0 0 100 100">
+                            <path class="line line1"
+                                d="M 20,34.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                            <path class="line line2" d="M 20,50 H 80" />
+                            <path class="line line3"
+                                d="M 20,65.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </nav>
+
+
+
+
+
+
+        <!-- ----------------------------------------
+                         Contact Page
+          ---------------------------------------- -->
+
+        <div class="allf-heading">
+            <h1>Get in touch With us</h1>
+        </div>
+
+
+        <div class="contact">
+
+            <div class="contact__info">
+
+                <div class="contact__info--box">
+                    <h1>Contact Information</h1>
+                    <p>Fill the form and someone from our team will get back to you</p>
+
+                    <ul>
+                        <li>
+                            <i class="uil uil-envelope"></i>
+                            <a href="#">support@roofruler.com</a>
+                        </li>
+
+                        <li>
+                            <i class="uil uil-phone"></i>
+                            <a href="#">+ 01 587 889 2757</a>
+                        </li>
+
+                        <li>
+                            <i class="uil uil-estate"></i>
+                            <a href="#">Calgary, AB T3K5C6, CA</a>
+                        </li>
+                    </ul>
+                    <div class="contact__info--circle"></div>
+                </div>
+
+
+            </div>
+
+            <div class="contact__form">
+
+                <div class="contact__form--group">
+                    <label for="cname">Your Name</label>
+                    <input type="text" name="cname" id="cname">
+                </div>
+
+                <div class="contact__form--group">
+                    <label for="cmail">Your Email Address</label>
+                    <input type="email" name="cmain" id="cmail">
+                </div>
+
+                <div class="contact__form--group">
+                    <label for="csms">Type your message</label>
+                    <textarea name="csms" id="csms"></textarea>
+                </div>
+
+                <button type="submit" class="dk-hover">Send Message</button>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+                         Footer
+         ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦ -->
+
+
+        <footer class="footer">
+
+            <div class="footer__about">
+                <a href="../index.html"><img src="../img/logo.svg" alt=""></a>
+                <p class="footer__about--text">Roof Ruler is a software and a service. Use the app to measure and
+                    estimate.</p>
+
+                <p class="footer__about--address">
+                    <i class="uil uil-envelope"></i>
+                    <span><a href="#">support@roofruler.com</a></span>
+                </p>
+
+                <p class="footer__about--address">
+                    <i class="uil uil-phone"></i>
+                    <span>+ 01 587 889 2757</span>
+                </p>
+
+            </div>
+
+            <div class="footer__links">
+                <h1>Services</h1>
+
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Sumbit on issue</a></li>
+                    <li><a href="#">Document</a></li>
+                    <li><a href="#">Planning Clean</a></li>
+                    <li><a href="#">Company us</a></li>
+                </ul>
+
+            </div>
+
+
+
+            <div class="footer__links">
+                <h1>Support</h1>
+
+                <ul>
+                    <li><a href="plans.html">Pricing Plan</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="#">Tutorial</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="footer__links">
+                <h1>Company</h1>
+
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Join Us</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="partner.html">Partners</a></li>
+                </ul>
+
+            </div>
+
+
+
+            <div class="footer__links">
+                <h1>Legal</h1>
+
+                <ul>
+                    <li><a href="#">Claim</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="privacy.html">Terms</a></li>
+                </ul>
+
+                <div class="footer__social">
+                    <h1>Connect with us</h1>
+                    <a href="#"><i class="uil uil-twitter"></i></a>
+                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    <a href="#"><i class="uil uil-youtube"></i></a>
+                </div>
+            </div>
+
+
+
+
+
+        </footer>
+
+
+        <!-- ✦✦✦✦✦✦✦✦✦  Wrapper End  ✦✦✦✦✦✦✦✦✦✦✦ -->
+    </div>
+
+    <!-- ✦✦✦✦✦✦✦✦✦  Copyright  ✦✦✦✦✦✦✦✦✦✦✦ -->
+
+    <div class="copyright">
+        <p>Copyright &copy; RoofRuler 2021. All right reserved</p>
+    </div>
+
+
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

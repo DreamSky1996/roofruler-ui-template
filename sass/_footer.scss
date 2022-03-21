@@ -1,0 +1,112 @@
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+//     Footer
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+
+.footer {
+    font-size: 1.6rem;
+    color: $color-text-dark;
+    display: grid;
+    grid-template-columns: 2.4fr 1fr 1fr 1fr 1fr;
+    padding: 5rem 0rem;
+    grid-gap: 5rem;
+
+    a {
+        color: $color-text-dark;
+
+        &:hover {
+            color: rgba($color-heading-dark, .8);
+            text-decoration: underline;
+        }
+    }
+
+
+    &__about {
+
+        &>a img {
+            width: 15.5rem;
+            height: auto;
+            object-fit: contain;
+            margin-bottom: 3rem;
+            display: block;
+        }
+
+        &--text {
+            margin-bottom: 2.5rem;
+        }
+
+        &--address {
+            display: flex;
+            align-items: center;
+
+
+            &:not(:last-child) {
+                margin-bottom: 2.6rem;
+            }
+
+            i {
+                margin-right: 1.8rem;
+                font-size: 2rem;
+            }
+
+        }
+
+
+    }
+
+    &__links {
+
+        &>h1 {
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin-bottom: 1.6rem;
+        }
+
+        li>a {
+            font-size: 1.6rem;
+            color: $color-text-dark;
+        }
+
+        li {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+
+    }
+
+    &__social {
+
+        &>h1 {
+            font-size: 1.8rem;
+            color: $color-heading-dark;
+            font-weight: 400;
+            margin-top: 1.5rem;
+            margin-bottom: 1.6rem;
+        }
+
+        &>a {
+            font-size: 3rem;
+        }
+
+    }
+
+}
+
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+//     Copyright
+// ✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦✦
+
+.copyright {
+    background: $color-blue;
+    height: 8rem;
+    @include flex-col-center;
+    margin-top: auto;
+
+
+    p {
+        font-size: 1.6rem;
+        color: $color-white;
+        padding: 0 2rem;
+    }
+
+}
